@@ -8,6 +8,6 @@ If you are planning to take your Mysql Database backup then you are in correct d
 
 1. you have percona-xtrabackup.x86_64             2.0.1-446.rhel5              installed
 
-2. Shecdule your backup script in crontab hourly it will take full backup at 1st hour of day and then after every hour taker incremental backup.
+2. Shecdule your backup script in crontab hourly it will take full backup at every  day and incremental after every hour .
 
 3 * * * * /mnt/backups/Incremental_backup_Script.sh > /mnt/backups/percona_output_$(date +\%d_\%H:\%M).txt 2>&1
